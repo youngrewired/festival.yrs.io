@@ -1,0 +1,9 @@
+{% extends "templates/partials/base.html" %}
+{% block content %}
+<div class="full-width-page" id="main-wrapper">
+    <h1 class="title">{{cms.whatisthefestivalofcode.name}}</h1>
+    <div class="copy wrapper">
+        {{cms.whatisthefestivalofcode.copy|safe}}
+    </div>
+</div>
+{% endblock %}

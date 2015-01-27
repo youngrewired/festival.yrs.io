@@ -1,0 +1,88 @@
+$red: #E34F50;
+$red--dark: #BD4142;
+$blue: #7EC7E3;
+$pink: #AD196F;
+$yellow: #F1C71C;
+$green: #3D9970;
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "header";
+@import "service";
+
+.wrapper {
+	@include outer-container;
+}
+
+h1.title {
+	background: $red;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 2em;
+	padding: 1em;
+	text-align: center;
+	color: white;
+	&.pink {
+		background: $pink;
+	}
+	&.yellow {
+		background: $yellow;
+	}
+	&.blue {
+		background: $blue;
+	}
+}
+
+.festival-journey + #footer-wrapper #pre-footer {
+	display: none;
+}
+
+.update-post {
+	h1.title {
+		&.Participant,
+		&.Staff {
+			background: $red;
+		}
+		&.Mentor {
+			background: $pink;
+		}
+		&.Centre.Lead {
+			background: $blue;
+		}
+		&.Volunteer {
+			background: $yellow;
+		}
+		&.Sponsor {
+			background: $green;
+		}
+		&.Parents {
+			background: $red--dark;
+		}
+	}
+	.copy {
+		@include span-columns(8);
+		@include shift(2);
+	}
+	a.cta {
+		@extend .copy;
+		text-align: center;
+	}
+}
+
+.faq {
+	.content {
+		@include span-columns(8);
+		@include shift(2);
+	}
+	ul.general {
+		margin-top: 1.5em;
+	}
+}
+
+.centre-page .content {
+	@include span-columns(8);
+	@include shift(2);
+	img {
+		margin-top: 1.5em;
+	}
+}

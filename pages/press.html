@@ -1,0 +1,12 @@
+{% extends "templates/partials/base.html" %}
+{% block content %}
+<div class="full-width-page" id="main-wrapper">
+<h1 class="title">{{cms.pressmedia.name}}</h1>
+    <div class="wrapper">
+        <div class="copy">
+            {{cms.pressmedia.copy|safe}}
+        </div>
+        <a href="{{cms.pressmedia.cta_link}}" class="cta button">{{cms.pressmedia.cta_text}}</a>
+    </div>
+</div>
+{% endblock %}

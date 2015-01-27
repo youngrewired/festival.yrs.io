@@ -1,0 +1,43 @@
+{% extends "templates/partials/base.html" %}
+{% block content %}
+<div class="full-width-page centre-page" id="main-wrapper">
+<h1 class="title">Registered Centres</h1>
+      <div class="container">
+          <div class="wrapper">
+            <div class="content">
+              <img src="{{item.image.url}}" alt="Image of {{item.name}}" class="12u">
+              <div class="top-blocks row">
+                  <div class="4u">
+                      <h2>Centre</h2>
+                      <span class="name">{{item.name}}</span><br>
+                      {% if item.website %}
+                          <a href="{{ item.website }}">{{ item.website }}</a>
+                      {% endif %}
+                  </div>
+                  <div class="4u">
+                      <h2>Address</h2>
+                      <p>
+                          {{ item.address.street1 }}<br>
+                          {{ item.address.city }}                          </p>
+                  </div>
+                  <div class="4u">
+                      <h2>Contact</h2>
+                      <p>
+                          {{ item.cl_name }}<br>
+                          <a href="mailto:{{ item.cl_email }}">{{ item.cl_email }}</a>
+                      </p>
+                  </div>
+              </div>
+              <div class="description">
+                  <p>
+                      {{ item.description }}
+                  </p>
+              </div>
+              <div class="register">
+                  <p>Want to be at {{item.name}}? <a href="/register" class="cta button">Register now!</a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock %}

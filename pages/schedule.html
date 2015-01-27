@@ -1,0 +1,15 @@
+{% extends "templates/partials/base.html" %}
+{% block content %}
+<div class="full-width-page" id="main-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="8u">
+                <h1 class="title">{{cms.schedule.name}}</h1>
+                <div class="copy">
+                    {{cms.schedule.copy|safe}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "templates/partials/base.html" %}
+{% block content %}
+<div class="full-width-page" id="main-wrapper">
+<h1 class="title">{{cms.makerspace.name}}</h1>
+    <div class="container">
+        <div class="row">
+            <div class="8u">
+                <div class="copy">
+                    {{cms.makerspace.copy|safe}}
+                </div>
+                <a href="{{cms.makerspace.cta_link}}" class="cta button">{{cms.makerspace.cta_text}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

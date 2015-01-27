@@ -1,0 +1,108 @@
+{% extends "templates/partials/base.html" %}
+
+{% block content %}
+
+{% set general = cms.faq|where('category','General') %}
+{% set general = general|sort('name') %}
+{% set participants = cms.faq|where('category','Participants') %}
+{% set participants = participants|sort('name') %}
+{% set mentors = cms.faq|where('category','Mentors') %}
+{% set mentors = mentors|sort('name') %}
+{% set centre_leads = cms.faq|where('category','Centre Leads') %}
+{% set centre_leads = centre_leads|sort('name') %}
+{% set parents = cms.faq|where('category','Parents') %}
+{% set parents = parents|sort('name') %}
+{% set volunteers = cms.faq|where('category','Volunteers') %}
+{% set volunteers = volunteers|sort('name') %}
+
+  <div class="full-width-page faq" id="main-wrapper">
+   <h1 class="title">Frequently Asked Questions</h1>
+      <div class="wrapper">
+          <div class="content">
+                  <ul class="general">
+                      <h2>General</h2>
+                      {% for question in general %}
+                      <li>
+                          <h3>{{ question.name }}</h3>
+                          <div class="answer">
+                              {{question.answer|safe}}
+                          </div>
+                      </li>
+                      {% endfor %}
+                  </ul>
+                  <div class="section role-selector row">
+                      <h1>Skip to section for...</h1>
+                      <a href="#participants" class="participants 4u">
+                          <img src="/static/images/ruby--participant.png">
+                          <p>Participants</p>
+                      </a>
+                      <a href="#mentors" class="mentors 4u">
+                          <img src="/static/images/ruby--mentor.png">
+                          <p>Mentors</p>
+                      </a>
+                      <a href="#centre-leads" class="centre-leads 4u">
+                          <img src="/static/images/ruby--centre-lead.png">
+                          <p>Centre Leads</p>
+                      </a>
+                  </div>
+                  <ul class="participants" id="participants">
+                      <h2>Participants</h2>
+                      {% for question in participants %}
+                      <li>
+                          <h3>{{ question.name }}</h3>
+                          <div class="answer">
+                              {{question.answer|safe}}
+                          </div>
+                      </li>
+                      {% endfor %}
+                  </ul>
+                  <ul class="mentors" id="mentors">
+                      <h2>Mentors</h2>
+                      {% for question in mentors %}
+                      <li>
+                          <h3>{{ question.name }}</h3>
+                          <div class="answer">
+                              {{question.answer|safe}}
+                          </div>
+                      </li>
+                      {% endfor %}
+                  </ul>
+                  <ul class="centre-leads" id="centre-leads">
+                      <h2>Centre Leads</h2>
+                      {% for question in centre_leads %}
+                      <li>
+                          <h3>{{ question.name }}</h3>
+                          <div class="answer">
+                              {{question.answer|safe}}
+                          </div>
+                      </li>
+                      {% endfor %}
+                  </ul>
+                  <ul class="parents">
+                      <h2>Parents</h2>
+                      {% for question in parents %}
+                      <li>
+                          <h3>{{ question.name }}</h3>
+                          <div class="answer">
+                              {{question.answer|safe}}
+                          </div>
+                      </li>
+                      {% endfor %}
+                  </ul>
+                  <ul class="volunteers">
+                      <h2>Volunteers</h2>
+                      {% for question in volunteers %}
+                      <li>
+                          <h3>{{ question.name }}</h3>
+                          <div class="answer">
+                              {{question.answer|safe}}
+                          </div>
+                      </li>
+                      {% endfor %}
+                  </ul>
+                  </div>
+              </div>
+              </div>
+  </div>
+
+{% endblock %}

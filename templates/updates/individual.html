@@ -1,0 +1,16 @@
+{% extends "templates/partials/base.html" %}
+{% block content %}
+  <div class="full-width-page update-post" id="main-wrapper">
+    <h1 class="title {{item.listing_background}}">{{item.name}}</h1>
+    <h2 class="author"><a href="{{item.author_url}}" class="{{item.listing_background}}">by {{item.author_name}}</a></h2>
+
+      <div class="wrapper">
+        <div class="copy {{item.listing_background}}">
+            {{item.article_copy|safe}}
+        </div>
+        {% if item.cta_link && item.cta_text %}
+            <a class="button cta {{item.listing_background}}" href="{{ item.cta_link }}">{{item.cta_text}}</a>
+        {% endif %}
+      </div>
+  </div>
+{% endblock %}
