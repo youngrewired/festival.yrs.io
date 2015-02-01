@@ -1,12 +1,14 @@
 {% extends "templates/partials/base.html" %}
 {% block content %}
-<div class="full-width-page" id="main-wrapper">
+<div class="full-width-page international" id="main-wrapper">
     <h1 class="title">{{cms.internationalparticipants.name}}</h1>
     <div class="wrapper">
         <div class="copy">
-            {{cms.internationalparticipants.copy|safe}}
+        	<div class="inner">
+        		{{cms.internationalparticipants.copy|safe}}
+        		<a href="{{cms.internationalparticipants.cta_link}}" class="cta button">{{cms.internationalparticipants.cta_text}}</a>
+        	</div>
         </div>
-        <a href="{{cms.internationalparticipants.cta_link}}" class="cta button">{{cms.internationalparticipants.cta_text}}</a>
     </div>
 </div>
 {% endblock %}

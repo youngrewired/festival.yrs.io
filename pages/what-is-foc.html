@@ -3,7 +3,14 @@
 <div class="full-width-page" id="main-wrapper">
     <h1 class="title">{{cms.whatisthefestivalofcode.name}}</h1>
     <div class="copy wrapper">
-        {{cms.whatisthefestivalofcode.copy|safe}}
+		<div class="inner">
+			<div class="img-3">
+				<img src="/static/images/what-1.jpg">
+				<img src="/static/images/what-2.jpg">
+				<img src="/static/images/what-3.jpg">
+			</div>
+			{{cms.whatisthefestivalofcode.copy|safe}}
+		</div>
     </div>
 </div>
 {% endblock %}

@@ -20,7 +20,7 @@
       <div class="wrapper">
           <div class="content">
                   <ul class="general">
-                      <h2>General</h2>
+                      <h2 class="active">General</h2>
                       {% for question in general %}
                       <li>
                           <h3>{{ question.name }}</h3>
@@ -30,21 +30,6 @@
                       </li>
                       {% endfor %}
                   </ul>
-                  <div class="section role-selector row">
-                      <h1>Skip to section for...</h1>
-                      <a href="#participants" class="participants 4u">
-                          <img src="/static/images/ruby--participant.png">
-                          <p>Participants</p>
-                      </a>
-                      <a href="#mentors" class="mentors 4u">
-                          <img src="/static/images/ruby--mentor.png">
-                          <p>Mentors</p>
-                      </a>
-                      <a href="#centre-leads" class="centre-leads 4u">
-                          <img src="/static/images/ruby--centre-lead.png">
-                          <p>Centre Leads</p>
-                      </a>
-                  </div>
                   <ul class="participants" id="participants">
                       <h2>Participants</h2>
                       {% for question in participants %}

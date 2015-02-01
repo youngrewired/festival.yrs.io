@@ -1,9 +1,3 @@
-/*
-	Verti by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -143,13 +137,15 @@
 			form input[type="text"],
 			form input[type="email"],
 			form input[type="password"],
+			form input[type="date"],
+			form input[type="number"],
 			form select,
 			form textarea
 			{
 				-webkit-appearance: none;
 				display: block;
 				width: 100%;
-				border-radius: 8px;
+				border-radius: 6px;
 				border: solid 1px #eee;
 			}
 
@@ -159,12 +155,15 @@
 				form select:focus,
 				form textarea:focus
 				{
-					border-color: #0090c5;
+					border-color: #E34F50;
+					outline: 0;
 				}
 
 			form input[type="text"],
 			form input[type="email"],
 			form input[type="password"],
+			form input[type="date"],
+			form input[type="number"],
 			form select
 			{
 				line-height: 3em;
@@ -568,7 +567,7 @@
 	{
 		background: #fff;
 		box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.05);
-        padding-bottom: 6em;
+        padding-bottom: 2em;
 	}
     #main-wrapper * {
         line-height: 2;
@@ -610,7 +609,7 @@
 	#pre-footer {
 		display: block;
 		width: 100%;
-		padding: 1.5em 0;
+		padding: 2.5em 0 0 0;
 		font-size: 1em;
 		color: black;
 		text-align: center;
@@ -636,6 +635,7 @@
 
         #pre-footer a.volunteer {
             background: #FFD600;
+            color: #444;
         }
 
 	#footer
@@ -749,47 +749,9 @@
 	font-size: 1em;
 }
 
-.section.role-selector.row {
-    margin: 2em 0;
-	display: block;
-	background: #F3F3F3;
-	padding: 1em 1em 3em 1em;
-	border-radius: 6px;
-    margin-left: 0 !important;
-}
-
-.section.role-selector.row h1 {
-	display: block;
-	width: 100%;
-	text-align: center;
-	font-size: 1.5em;
-}
-
-.section.role-selector.row > a {
-	padding-left: 0 !important;
-}
-
-.section.role-selector a img {
-	height: 150px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.section.role-selector a p {
-	display: block;
-	text-align: center;
-	font-size: 1.25em;
-	color: #444444;
-	font-size: 1.25em;
-	font-weight: 600;
-	margin-top: 1em;
-	margin-bottom: 0;
-}
-
 h1.title {
 	font-size: 3em;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 	margin-top: 0;
 	width: 100%;
 	display: block;
@@ -925,7 +887,7 @@ body.homepage {
     font-size: 1.25em;
     margin-bottom: 0;
     color: white;
-    padding: 2em;
+    padding: 1em 1.5em;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
 }
@@ -933,10 +895,12 @@ body.homepage {
 .updates ul li h2 small {
     font-weight: normal;
     margin-left: 1em;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 
 .updates ul li .article-image {
-    height: 300px;
+    height: 200px;
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -951,9 +915,12 @@ body.homepage {
 }
 
 .update-post h2.author {
-    margin-bottom: 3em;
-    margin-top: 1.5em;
+    margin-bottom: 35px;
+    margin-top: 12.5px;
     text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 300;
 }
 
 .update-post h2.author a.Participant,
@@ -992,17 +959,51 @@ body.homepage {
 }
 
 .update-post a.cta {
-    margin-top: 3em;
+    margin-bottom: 1em;
+    margin-top: .5em;
+}
+
+.copy ul li {
+	list-style: none;
+}
+
+.copy ul li:before {
+	content: "\f105";
+	font-family: "FontAwesome";
+	margin-right: 1em;
+}
+
+.faq-answer h1.title:before {
+	display: none;
 }
 
 .faq ul {
     background: black;
     border-radius: 6px;
     padding: 1.75em 2em;
+    list-style-type: none;
 }
 
 .faq ul h2 {
     font-size: 1.75em;
+}
+
+.faq ul h2:hover {
+	cursor: pointer;
+}
+
+.faq ul h2:after {
+	content: "\f062";
+	font-family: "FontAwesome";
+	float: right;
+}
+
+.faq ul h2.active:after {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
 }
 
 .faq ul li h3 {
@@ -1068,6 +1069,11 @@ body.homepage {
     background-color: #FFD600;
 }
 
+.faq ul.volunteers *,
+.faq ul.volunteers .answer * {
+	color: #444;
+}
+
 .faq ul h2 {
     font-size: 1.75em;
     color: white;
@@ -1115,6 +1121,7 @@ body.homepage {
 
 .centre-page img {
     border-radius: 6px;
+    width:100%;
 }
 
 .centre-page .top-blocks h2 {
@@ -1155,3 +1162,163 @@ body.homepage {
     -webkit-background-size: 150px 180px;
     background-size: 150px 180px;
 }
+
+form label .ss-q-title {
+	width: 100%;
+	display: block;
+	float: left;
+	margin-bottom: 0;
+}
+
+form .scroll-box {
+	height:30vh;
+	overflow:scroll;
+	border: 1px solid #f3f3f3;
+	border-radius: 6px;
+	padding: 2em;
+	margin-bottom: 1em;
+	font-size:.8em;
+	float: left;
+	width: 100%;
+	background:white;
+}
+
+form .scroll-box ul li:before {
+	content: "\f105";
+}
+
+form .scroll-box p:last-child {
+	margin-bottom: 0;
+}
+
+form .dropdown {
+	width: 100%;
+	float: left;
+	display: block;
+	background: #E34F50;
+	padding: 1.75em 2em;
+	border-radius: 6px;
+	margin-bottom: 2em;
+}
+
+form .dropdown.blue {
+	background: #72CFEC;
+}
+
+form .dropdown h2 {
+	font-size: 1.75em;
+	color: white;
+}
+
+form .dropdown h2:hover {
+	cursor: pointer;
+}
+
+form .dropdown h2:after {
+	content: "\f062";
+	font-family: "FontAwesome";
+	float: right;
+	-webkit-transition: all 0.15s ease-out 0s;
+	-moz-transition: all 0.15s ease-out 0s;
+	transition: all 0.15s ease-out 0s;
+}
+
+form .dropdown h2.active:after {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-webkit-transition: all 0.15s ease-out 0s;
+	-moz-transition: all 0.15s ease-out 0s;
+	transition: all 0.15s ease-out 0s;
+} 
+
+form .dropdown h2 + div {
+	margin-top: 1em;
+}
+
+form .dropdown .note {
+	float: left;
+	width: 100%;
+}
+
+form .dropdown label .ss-q-title,
+form .dropdown .ss-choice-label {
+	color: white;
+}
+
+form .dropdown div:last-child {
+	margin-bottom: .5em;
+}
+
+form input[type=submit] {
+	width: 100%;
+	font-size: 2em;
+	margin-top: 1em;
+}
+
+.register + #footer-wrapper #pre-footer {
+	display: none;
+}
+
+.register-overview h2 {
+	width: 100%;
+	display: block;
+	float: left;
+	margin-bottom: 19px;
+	margin-top: 1em;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: center;
+	color: #E34F50;
+	font-size: 2em;
+	background: white;
+}
+
+.register-overview ul li {
+	list-style-type: none;
+	display: block;
+}
+
+.register-overview ul li a {
+	width: 100%;
+	display: block;
+	float: left;
+	margin-bottom: 19px;
+	margin-top: 1em;
+	text-transform: uppercase;
+	font-weight: 800; 
+	text-align: center;
+	background: #E34F50;
+	color: white;
+	border-radius: 6px;
+	padding: 1em;
+	font-size: 1em;
+}
+
+.register-overview ul li a.m {
+	background: #C80079;
+}
+.register-overview ul li a.c {
+	background: #72CFEC;
+}
+.register-overview ul li a.v {
+	background: #FFD600;
+	color: #444;
+}
+
+.register-overview {
+	box-shadow: 0 0 0 transparent;
+}
+
+.register-overview + #footer-wrapper #pre-footer {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	form .dropdown h2 {
+		font-size: 1em;
+	}
+}
+

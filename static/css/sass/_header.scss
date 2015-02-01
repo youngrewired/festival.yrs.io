@@ -20,7 +20,7 @@
 	padding: 0 20px 30px 20px;
 }
 
-#header #nav ul h1 {
+#header #nav ul h1 { 
 	font-size: 1.25em;
 	margin-bottom: 1em;
 	color: $red;
@@ -37,6 +37,10 @@
 	padding: 0 !important;
 	color: #444444;
 	text-decoration: none;
+	i {
+		margin-left: .25em;
+		font-size: .8em;
+	}
 }
 
 #header #nav ul li:hover a {
@@ -72,17 +76,10 @@
 
 #header .menu {
 	@include span-columns(2);
-	margin-top: 90px;
+	margin-top: 50px;
 	color: $red;
 	text-align: left;
 	font-size: 2em;
-	span {
-		display: block;
-		font-size: .29em;
-		text-transform: uppercase;
-		margin-top: .5em;
-		font-weight: 600;
-	}
 	&:hover {
 		cursor: pointer;
 	}
@@ -91,7 +88,7 @@
 #header .contact {
 	@include span-columns(2);
 	@include shift(2);
-	margin-top: 90px;
+	margin-top: 50px;
 	color: $red;
 	text-align: right;
 	font-size: 2em;
@@ -99,13 +96,6 @@
 	a {
 		color: $red;
 		text-decoration: none;
-	}
-	span {
-		display: block;
-		font-size: .29em;
-		text-transform: uppercase;
-		margin-top: .5em;
-		font-weight: 600;
 	}
 	&:hover {
 		cursor: pointer;
@@ -116,9 +106,47 @@
 #header #logo {
 	@include span-columns(4);
 	@include shift(2);
-	margin-top: 50px;
+	margin-top: 35px;
 	img {
 		width: 100%;
-		margin-bottom: 50px;
+		margin-bottom: 25px;
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	#header #logo {
+		@include span-columns(6);
+		@include shift(1);
+		margin-top: 35px;
+		img {
+			margin-bottom: 25px; 
+		}
+	}
+	#header .contact {
+		display: none;
+	}
+	#header .menu {
+		margin-top: 5.5vw;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	#header .menu {
+		@include span-columns(1);
+		margin-top: 30px;
+		font-size: 1em;
+	}
+	#header #logo {
+		@include span-columns(8);
+		@include shift(1);
+		margin-top: 35px;
+		img {
+			margin-bottom: 25px; 
+		}
+	}
+	#header #nav ul {
+		@include span-columns(12 of 12);
+	}
+}
+

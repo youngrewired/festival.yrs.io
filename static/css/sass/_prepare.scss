@@ -1,0 +1,40 @@
+.prepare {
+	h2 {
+		@include span-columns(12);
+		margin-bottom: 19px;
+		margin-top: 1em;
+		text-transform: uppercase;
+		font-weight: 800;
+		text-align: center;
+		background: $pink;
+		color: white;
+		border-radius: 6px;
+		padding: .25em;
+	}
+	h3 {
+		@include span-columns(12);
+		margin-bottom: 19px;
+		text-transform: uppercase;
+		font-weight: 800;
+		text-align: center;
+		background: $blue;
+		color: white;
+		border-radius: 6px;
+		padding: .25em;
+	}
+	ul {
+		@include span-columns(12);
+		li {
+			margin-top:1em;
+			&:before {
+				content: "\f105";
+				font-family: "FontAwesome";
+				margin-right: 1em;
+			}
+			em {
+				display: block;
+				margin-left: 20px;
+			} 
+		}
+	}
+}

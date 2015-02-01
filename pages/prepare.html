@@ -1,10 +1,12 @@
 {% extends "templates/partials/base.html" %}
 {% block content %}
-<div class="full-width-page" id="main-wrapper">
+<div class="full-width-page prepare" id="main-wrapper">
     <h1 class="title">{{cms.preparefortheweek.name}}</h1>
-    <div class="container">
+    <div class="wrapper">
         <div class="copy">
-            {{cms.preparefortheweek.copy|safe}}
+        	<div class="inner">
+        		{{cms.preparefortheweek.copy|safe}}
+        	</div>
         </div>
     </div>
 </div>

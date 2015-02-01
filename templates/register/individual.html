@@ -1,0 +1,402 @@
+{% extends "templates/partials/base.html" %}
+{% block title %}{% parent %} - {{ item.name }}{% endblock %}
+{% block content %}
+   <h1 class="title no-eyes">{{item.name}}</h1>
+    <div class="wrapper register">     
+        <div class="copy">
+          <div class="inner">
+            <div class="note">
+              {{item.top_text|safe}}
+            </div>
+            <form action="https://docs.google.com/a/jellybabi.es/forms/d/1AT_B9KlsjQafHYDCKCnoyJbWq4ED5Xy0nOvBuAXA55Y/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1761625858"><div class="ss-q-title">First Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1761625858" value="" class="ss-q-short" id="entry_1761625858" dir="auto" aria-label="First Name  " aria-required="true" required="" title="">
+<div class="error-message" id="1529670435_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1052416988"><div class="ss-q-title">Last Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1052416988" value="" class="ss-q-short" id="entry_1052416988" dir="auto" aria-label="Last Name  " aria-required="true" required="" title="">
+<div class="error-message" id="114054992_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1013725531"><div class="ss-q-title">Email Address
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1013725531" value="" class="ss-q-short" id="entry_1013725531" dir="auto" aria-label="Email Address  " aria-required="true" required="" title="">
+<div class="error-message" id="171692640_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_577179957"><div class="ss-q-title">Phone Number
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.577179957" value="" class="ss-q-short" id="entry_577179957" dir="auto" aria-label="Phone Number  " aria-required="true" required="" title="">
+<div class="error-message" id="1214331875_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-date"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1176855342"><div class="ss-q-title">Date of Birth
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="date" name="entry.1176855342" value="" class="ss-q-date" dir="auto" id="entry_1176855342" aria-label="Date of Birth  " aria-required="true" required="">
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_505027106"><div class="ss-q-title">Age of July 31st 2015
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="number" name="entry.505027106" value="" class="ss-q-short" id="entry_505027106" dir="auto" aria-label="Age of July 31st 2015  Must be a whole number" aria-required="true" required="" step="1" title="Must be a whole number">
+<div class="error-message" id="546946339_errorMessage">Must be a whole number</div>
+<div class="required-message">This is a required question</div>
+</div>
+<div class="note">
+  <p>We are asking this as in previous years, registering participants often fill in the Date of Birth field incorrectly.</p>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-select"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_972795206"><div class="ss-q-title">Gender
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<select name="entry.972795206" id="entry_972795206" aria-label="Gender  " aria-required="true" required=""><option value=""></option>
+<option value="Male">Male</option> <option value="Female">Female</option> <option value="Other">Other</option> <option value="None">None</option></select>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_617299838"><div class="ss-q-title">Medical Requirements
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.617299838" value="" class="ss-q-short" id="entry_617299838" dir="auto" aria-label="Medical Requirements  " title="">
+<div class="error-message" id="1841774557_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1058048905"><div class="ss-q-title">Allergies
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1058048905" value="" class="ss-q-short" id="entry_1058048905" dir="auto" aria-label="Allergies  " title="">
+<div class="error-message" id="2052590990_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_422268518"><div class="ss-q-title">Address Line 1
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.422268518" value="" class="ss-q-short" id="entry_422268518" dir="auto" aria-label="Address Line 1  " aria-required="true" required="" title="">
+<div class="error-message" id="885815480_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1892021255"><div class="ss-q-title">Address Line 2
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="number" name="entry.1892021255" value="" class="ss-q-short" id="entry_1892021255" dir="auto" aria-label="Address Line 2  Must be a whole number" step="1" title="Must be a whole number">
+<div class="error-message" id="492134841_errorMessage">Must be a whole number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1638595876"><div class="ss-q-title">City
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1638595876" value="" class="ss-q-short" id="entry_1638595876" dir="auto" aria-label="City  " aria-required="true" required="" title="">
+<div class="error-message" id="471025518_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_2010594253"><div class="ss-q-title">Postcode
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.2010594253" value="" class="ss-q-short" id="entry_2010594253" dir="auto" aria-label="Postcode  " aria-required="true" required="" title="">
+<div class="error-message" id="97169706_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_122496147"><div class="ss-q-title">Country
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.122496147" value="" class="ss-q-short" id="entry_122496147" dir="auto" aria-label="Country  " aria-required="true" required="" title="">
+<div class="error-message" id="2142268083_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1178979695"><div class="ss-q-title">Preferred Centre
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1178979695" value="" class="ss-q-short" id="entry_1178979695" dir="auto" aria-label="Preferred Centre  " title="">
+<div class="error-message" id="393946097_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div>
+<div class="note">
+  <p>If you would like to be allocated to a specific centre, please let us know. We'll try our best, but cannot guarentee. <a href="/centres">Full list.</a></p>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-select"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1948477826"><div class="ss-q-title">How did you find out about the Festival of Code?
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<select name="entry.1948477826" id="entry_1948477826" aria-label="How did you find out about the Festival of Code?  "><option value=""></option>
+<option value="I&#39;ve been to a Festival of Code before">I&#39;ve been to a Festival of Code before</option> <option value="Twitter">Twitter</option> <option value="Facebook">Facebook</option> <option value="Instagram">Instagram</option> <option value="Vine">Vine</option> <option value="YouTube">YouTube</option> <option value="A friend told me">A friend told me</option> <option value="My school told me">My school told me</option><option value="Other">Other</option></select>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1324804833"><div class="ss-q-title">Have you been to a Young Rewired State event before? If so, which?
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+
+<ul class="ss-choices" role="group" aria-label="Have you been to a Young Rewired State event before? If so, which?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Young Rewired State 2009" id="group_1779814287_1" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Young Rewired State 2009</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Young Rewired State 2010" id="group_1779814287_2" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Young Rewired State 2010</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Young Rewired State 2011" id="group_1779814287_3" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Young Rewired State 2011</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Festival of Code 2012" id="group_1779814287_4" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Festival of Code 2012</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="YRS Scotland 2012" id="group_1779814287_5" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">YRS Scotland 2012</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Festival of Code 2013" id="group_1779814287_6" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Festival of Code 2013</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Young Rewired State: Berlin 2013" id="group_1779814287_7" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Young Rewired State: Berlin 2013</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Young Rewired State: New York 2013" id="group_1779814287_8" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Young Rewired State: New York 2013</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Young Rewired State: San Francisco 2013" id="group_1779814287_9" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Young Rewired State: San Francisco 2013</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Young Rewired State: Singapore 2014" id="group_1779814287_10" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Young Rewired State: Singapore 2014</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Festival of Code 2014" id="group_1779814287_11" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Festival of Code 2014</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Young Rewired State: Kosovo 2014" id="group_1779814287_12" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Young Rewired State: Kosovo 2014</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="Young Rewired State: Berlin 2014" id="group_1779814287_13" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Young Rewired State: Berlin 2014</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1779814287" value="__other_option__" id="group_1779814287_14" role="checkbox" class="ss-q-checkbox ss-q-other-toggle"></span>
+<span class="ss-choice-label">Other:</span></label>
+<span class="ss-q-other-container goog-inline-block"><input type="text" name="entry.1779814287.other_option_response" value="" class="ss-q-other" id="entry_1779814287_other_option_response" dir="auto" aria-label="Other"></span>
+</li></ul>
+<div class="error-message" id="1324804833_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_2120161224"><div class="ss-q-title">If you&#39;ve been to a YRS event before, which centre have you attended?
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.2120161224" value="" class="ss-q-short" id="entry_2120161224" dir="auto" aria-label="If you&#39;ve been to a YRS event before, which centre have you attended?  " title="">
+<div class="error-message" id="630189298_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1987602778"><div class="ss-q-title">Have you been to any events run by... (please tick)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+
+<ul class="ss-choices" role="group" aria-label="Have you been to any events run by... (please tick)  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1511611369" value="CoderDojo" id="group_1511611369_1" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">CoderDojo</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1511611369" value="Apps For Good" id="group_1511611369_2" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Apps For Good</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1511611369" value="Free:Formers" id="group_1511611369_3" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Free:Formers</span>
+</label></li></ul>
+<div class="error-message" id="1987602778_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1425181664"><div class="ss-q-title">What are your skills?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+
+<ul class="ss-choices ss-choices-required" role="group" aria-label="What are your skills?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="C" id="group_1562244358_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">C</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="C++" id="group_1562244358_2" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">C++</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="C#" id="group_1562244358_3" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">C#</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="CSS" id="group_1562244358_4" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">CSS</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Design" id="group_1562244358_5" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Design</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Electronics" id="group_1562244358_6" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Electronics</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="HTML" id="group_1562244358_7" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">HTML</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Java" id="group_1562244358_8" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Java</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Javascript" id="group_1562244358_9" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Javascript</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Mongo" id="group_1562244358_10" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Mongo</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Node.js" id="group_1562244358_11" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Node.js</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Objective C" id="group_1562244358_12" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Objective C</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="PHP" id="group_1562244358_13" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">PHP</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Python" id="group_1562244358_14" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Python</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Ruby" id="group_1562244358_15" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Ruby</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Scratch" id="group_1562244358_16" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Scratch</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="SQL" id="group_1562244358_17" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">SQL</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Swift" id="group_1562244358_18" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Swift</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Video Editing" id="group_1562244358_19" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Video Editing</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="Visual Basic" id="group_1562244358_20" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Visual Basic</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1562244358" value="__other_option__" id="group_1562244358_21" role="checkbox" class="ss-q-checkbox ss-q-other-toggle" aria-required="true"></span>
+<span class="ss-choice-label">Other:</span></label>
+<span class="ss-q-other-container goog-inline-block"><input type="text" name="entry.1562244358.other_option_response" value="" class="ss-q-other" id="entry_1562244358_other_option_response" dir="auto" aria-label="Other"></span>
+</li></ul>
+<div class="error-message" id="1425181664_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-select"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_123106646"><div class="ss-q-title">Will you have a laptop which you can bring during the week?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<select name="entry.123106646" id="entry_123106646" aria-label="Will you have a laptop which you can bring during the week?  " aria-required="true" required=""><option value=""></option>
+<option value="Yes">Yes</option> <option value="No">No</option></select>
+<div class="required-message">This is a required question</div></div></div></div> 
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1519372762"><div class="ss-q-title">Do you agree to our Code of Conduct?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<div class="scroll-box">
+  {{cms.agreements.code_of_conduct|safe}}
+</div>
+<ul class="ss-choices ss-choices-required" role="group" aria-label="Do you agree to our Code of Conduct?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1207820612" value="Yes" id="group_1207820612_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Yes, I agree.</span>
+</label></li></ul>
+<div class="error-message" id="1519372762_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div> 
+
+<div class="dropdown">
+<h2>Guardian section</h2> 
+
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1043963424"><div class="ss-q-title">Guardian First Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1043963424" value="" class="ss-q-short" id="entry_1043963424" dir="auto" aria-label="Guardian First Name  " aria-required="true" required="" title="">
+<div class="error-message" id="1863971613_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1617074985"><div class="ss-q-title">Guardian Last Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1617074985" value="" class="ss-q-short" id="entry_1617074985" dir="auto" aria-label="Guardian Last Name  " aria-required="true" required="" title="">
+<div class="error-message" id="1069544000_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1829098596"><div class="ss-q-title">Guardian Email 
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1829098596" value="" class="ss-q-short" id="entry_1829098596" dir="auto" aria-label="Guardian Email   " aria-required="true" required="" title="">
+<div class="error-message" id="1761544995_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1963610981"><div class="ss-q-title">Guardian Phone
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1963610981" value="" class="ss-q-short" id="entry_1963610981" dir="auto" aria-label="Guardian Phone  " aria-required="true" required="" title="">
+<div class="error-message" id="1246182667_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_25977436"><div class="ss-q-title">Guardian Relationship to Participant
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.25977436" value="" class="ss-q-short" id="entry_25977436" dir="auto" aria-label="Guardian Relationship to Participant  " aria-required="true" required="" title="">
+<div class="error-message" id="1978699914_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div>
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1168440551"><div class="ss-q-title">Do you agree to this media release?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+<div class="scroll-box">
+  {{cms.agreements.media_release__parent|safe}}
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<ul class="ss-choices ss-choices-required" role="group" aria-label="Do you agree to this media release?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.123453520" value="Yes" id="group_123453520_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Yes, I do.</span>
+</label></li></ul>
+<div class="error-message" id="1168440551_errorMessage"></div>
+<div class="required-message">This is a required question</div></div>
+<div class="note">
+  <p>If there's any reason why your child cannot be filmed or photographed, <a href="mailto:hello@youngrewiredstate.org">email us.</a></p>
+</div></div></div>
+
+</div>
+
+
+<div class="dropdown blue">
+<h2>If Emergency contact is not guardian</h2> 
+
+ <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_321213193"><div class="ss-q-title">Emergency Contact First Name
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.321213193" value="" class="ss-q-short" id="entry_321213193" dir="auto" aria-label="Emergency Contact First Name  " title="">
+<div class="error-message" id="1954420570_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_761398593"><div class="ss-q-title">Emergency Contact Phone Number
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.761398593" value="" class="ss-q-short" id="entry_761398593" dir="auto" aria-label="Emergency Contact Phone Number  " title="">
+<div class="error-message" id="1109493858_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_904214632"><div class="ss-q-title">Emergency Contact Relationship to Participant
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.904214632" value="" class="ss-q-short" id="entry_904214632" dir="auto" aria-label="Emergency Contact Relationship to Participant  " title="">
+<div class="error-message" id="1300805938_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> 
+</div>
+<input type="hidden" name="draftResponse" value="[,,&quot;-1090982624843406422&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+<input type="hidden" name="fbzx" value="-1090982624843406422">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+</td>
+</tr></tbody></table></div></ol></form>
+          </div>
+        </div>
+    </div>
+{% endblock %}

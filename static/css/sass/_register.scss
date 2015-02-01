@@ -1,0 +1,59 @@
+form {
+	.required-message,
+	.error-message {
+		display: none;
+	}
+	.ss-required-asterisk {
+		display: inline;
+	}
+	.ss-form-question {
+		margin-bottom: 2em;
+		@include span-columns(12);
+	}
+	.ss-q-title {
+		margin-bottom: -1em;
+		text-transform: uppercase;
+	}
+	label[for="itemView.getDomIdToLabel()"] {
+		display: inline;
+	}
+	form input[type="text"]:focus, form input[type="email"]:focus, form input[type="password"]:focus, form select:focus, form textarea:focus {
+		outline: 0 !important;
+		border-color: $red !important; 
+	}
+	.note p {
+		margin-bottom: 0;
+		font-size: .7em;
+		background: #eee;
+		border-radius: 6px;
+		padding: 1em 1.5em;
+		color: #444;
+		margin-top: 1em;
+		&:before {
+			content: "\f059";
+			font-family: "FontAwesome";
+			margin-right: 1em;
+		}
+	}
+	li.ss-choice-item {
+		@include span-columns(6 of 12);
+		@include omega(2n);
+		label {
+			margin: 0;
+			font-weight: 300;
+			.ss-choice-label {
+				margin-left: .5em;
+			}
+		}
+		&:before {
+			display: none;
+		}
+		&:last-child {
+			@include span-columns(12);
+		}
+	}
+}
+
+.copy ul li:before {
+	content: "";
+}
