@@ -552,7 +552,8 @@ form ul.ss-choices {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  padding-left: 0; }
   form ul.ss-choices:last-child {
     margin-right: 0; }
 form li.ss-choice-item {
@@ -589,6 +590,15 @@ form li.ss-choice-item {
       width: 100%; }
       form li.ss-choice-item:last-child {
         margin-right: 0; } }
+form table,
+form input[type="submit"] {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  form table:last-child,
+  form input[type="submit"]:last-child {
+    margin-right: 0; }
 
 form.centre .ss-q-title {
   font-size: 1em; }
@@ -1129,6 +1139,8 @@ form.validate label {
     display: none; }
 form.validate input {
   margin-bottom: 2em; }
+form.validate ul {
+  padding-left: 0; }
 form.validate ul li:before {
   display: none; }
 form.validate input[type="radio"] {

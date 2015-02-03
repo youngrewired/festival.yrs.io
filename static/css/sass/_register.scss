@@ -54,6 +54,7 @@ form {
 	}
 	ul.ss-choices {
 		@include span-columns(12);
+		padding-left: 0;
 	}
 	li.ss-choice-item {
 		@include span-columns(6 of 12);
@@ -75,6 +76,10 @@ form {
 		@media screen and (max-width: 900px) {
 			@include span-columns(12 of 12);
 		}
+	}
+	table,
+	input[type="submit"] {
+		@include span-columns(12);
 	}
 }
 
