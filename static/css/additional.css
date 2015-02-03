@@ -756,18 +756,25 @@ form.centre .ss-q-title {
     .contact .right:last-child {
       margin-right: 0; } }
 
+.festival-journey .services .start.white {
+  padding: 0 !important;
+  margin: 0 !important; }
+.festival-journey .red {
+  background: white;
+  padding: 0; }
+  .festival-journey .red * {
+    color: #E34F50; }
+.festival-journey h1.title {
+  margin-bottom: -1em; }
 .festival-journey .start {
   margin-top: 2em; }
   .festival-journey .start h2 {
     margin: 0;
-    font-size: 4vw; }
-  .festival-journey .start h3 {
-    font-size: 1em;
-    font-size: 3vw;
+    font-size: 4vw;
+    font-weight: 800;
     text-transform: uppercase; }
   .festival-journey .start h1 {
-    margin: 0;
-    font-size: 5vw; }
+    margin-top: 3em; }
   @media screen and (min-width: 800px) {
     .festival-journey .start h2 {
       font-size: 2vw; }
