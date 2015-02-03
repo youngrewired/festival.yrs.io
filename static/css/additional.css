@@ -531,7 +531,8 @@ form .note {
   margin-right: 2.35765%;
   width: 100%;
   float: left;
-  width: 100%; }
+  width: 100%;
+  margin-top: 1em; }
   form .note:last-child {
     margin-right: 0; }
 form .note p {
@@ -599,6 +600,8 @@ form input[type="submit"] {
   form table:last-child,
   form input[type="submit"]:last-child {
     margin-right: 0; }
+form .dropdown label {
+  font-size: .8em; }
 
 form.centre .ss-q-title {
   font-size: 1em; }

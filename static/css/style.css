@@ -130,7 +130,7 @@
 				display: block;
 				font-weight: 600;
 				margin: 0 0 1em 0;
-				font-size: 0.8em;
+				font-size: 1em;
 				color: #444;
 			}
 
@@ -1253,6 +1253,10 @@ form .dropdown .note {
 form .dropdown .note a {
 	color: #E34F50;
 	text-decoration: none;
+}
+
+form .dropdown .ss-q-title {
+	font-size: 1em;
 }
 
 form .dropdown a { 

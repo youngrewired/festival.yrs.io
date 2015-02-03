@@ -35,6 +35,7 @@ form {
 		@include span-columns(12);
 		float: left;
 		width: 100%;
+		margin-top:1em;
 	}
 	.note p {
 		margin-bottom: 0;
@@ -80,6 +81,9 @@ form {
 	table,
 	input[type="submit"] {
 		@include span-columns(12);
+	}
+	.dropdown label {
+		font-size: .8em;
 	}
 }
 
