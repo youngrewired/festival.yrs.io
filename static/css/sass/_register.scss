@@ -1,4 +1,10 @@
 form {
+	.ss-form-entry {
+		@include span-columns(12);
+		display: block;
+		overflow: auto;
+		margin-bottom: 2em;
+	}
 	.required-message,
 	.error-message {
 		display: none;
@@ -11,8 +17,12 @@ form {
 		@include span-columns(12);
 	}
 	.ss-q-title {
+		@include span-columns(12);
 		margin-bottom: -1em;
 		text-transform: uppercase;
+		font-weight: 600;
+		font-size: .8em;
+		color: #444
 	}
 	label[for="itemView.getDomIdToLabel()"] {
 		display: inline;
@@ -21,23 +31,34 @@ form {
 		outline: 0 !important;
 		border-color: $red !important; 
 	}
+	.note {
+		@include span-columns(12);
+		float: left;
+		width: 100%;
+	}
 	.note p {
 		margin-bottom: 0;
-		font-size: .7em;
+		font-size: .8em;
 		background: #eee;
 		border-radius: 6px;
 		padding: 1em 1.5em;
 		color: #444;
-		margin-top: 1em;
+		margin-top: 1em; 
+		float: left;
+		width: 100%;
 		&:before {
 			content: "\f059";
 			font-family: "FontAwesome";
 			margin-right: 1em;
 		}
 	}
+	ul.ss-choices {
+		@include span-columns(12);
+	}
 	li.ss-choice-item {
 		@include span-columns(6 of 12);
 		@include omega(2n);
+		margin-top: .5em;
 		label {
 			margin: 0;
 			font-weight: 300;
@@ -51,7 +72,14 @@ form {
 		&:last-child {
 			@include span-columns(12);
 		}
+		@media screen and (max-width: 900px) {
+			@include span-columns(12 of 12);
+		}
 	}
+}
+
+form.centre .ss-q-title {
+	font-size: 1em;
 }
 
 .copy ul li:before {

@@ -26,12 +26,13 @@
             margin-bottom: 0;
         }
         &.white {
-            padding-top: 1em;
+            padding-top: 2.5em;
             padding-bottom: ($section-spacing / 2);
         }
     }
     .section {
         padding: $section-spacing 0;
+        background: white;
         @include span-columns(12);
         .copy {
             @include span-columns(6);
@@ -39,7 +40,8 @@
             h2 {
                 font-weight: 300;
                 margin-bottom: 1em;
-                font-size: 1.5em;
+                font-size: 1.75em;
+                line-height: 1.5; 
             }
             &.full-text {
                 @include span-columns(8);
@@ -49,6 +51,16 @@
                 h2 {
                     padding-bottom: 1em;
                     border-bottom: 2px solid white;
+                }
+                a.cta.white {
+                    color: $red;
+                    background: white;
+                    margin-top: 2em;
+                    @include transition;
+                    &:hover {
+                        background: darken(white, 5%);
+                        @include transition;
+                    }
                 }
             }
             &.one-line {
@@ -79,6 +91,12 @@
         }
         &.right img {
             @include shift(1.5);
+        }
+        &.top-only {
+            padding-bottom: 0;
+        }
+        &.bottom-only {
+            padding-top: 0
         }
         &.blue {
             background: $blue;
@@ -144,6 +162,58 @@
             p {
                 margin-bottom: 1.5em;
             }
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .section img {
+            display: none
+        }
+        .section .copy {
+            @include span-columns(12);
+            @include shift(0);
+            margin-left: 0;
+            padding: 0 5em;
+            * {
+                text-align: center
+            }
+        }
+        .section img + .copy {
+            margin-left: 0
+        }
+        .section.background .copy.full-text {
+            width: 100%;
+            margin-left: 0
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .section {
+            padding: 2.5em 0;
+        }
+        .start {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1em;
+            }
+            h3 {
+                font-size: 1em;
+            }
+        }
+        .section .copy {
+            padding: 0 1em !important; 
+            h2 {
+                font-size: 1.25em;
+            }
+        }
+        .section.background {
+            padding: 5em 0;
+        }
+        .section .copy.full-text {
+            font-size: 1em;
+        }
+        .section.background.register {
+            padding: 2.5em 0 5em 0;
         }
     }
 }

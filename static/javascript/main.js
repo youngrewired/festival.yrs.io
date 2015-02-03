@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $("#header #nav").hide();
 
-    $("#header .menu").click(function() {
+    $("#header .menu").click(function(event) {
     	event.stopPropagation();
         $("#header #nav").slideToggle("slow");
     });

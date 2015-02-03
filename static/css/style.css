@@ -1017,6 +1017,10 @@ body.homepage {
     color: white;
 }
 
+.faq ul li .answer a {
+	text-decoration: underline;
+}
+
 .faq ul li .answer p {
     margin-bottom: .5em;
 }
@@ -1114,9 +1118,12 @@ body.homepage {
 
 .centres ul li p {
     color: black;
-    margin-top: 3em;
     border-bottom: 1px solid #F3F3F3;
     padding-bottom: 1em;
+    font-size: .8em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #444;
 }
 
 .centre-page img {
@@ -1243,9 +1250,23 @@ form .dropdown .note {
 	width: 100%;
 }
 
+form .dropdown .note a {
+	color: #E34F50;
+	text-decoration: none;
+}
+
+form .dropdown a { 
+	color: white;
+	text-decoration: underline;
+}
+
 form .dropdown label .ss-q-title,
 form .dropdown .ss-choice-label {
 	color: white;
+}
+
+form .dropdown .ss-item {
+	margin-bottom: 2em;
 }
 
 form .dropdown div:last-child {
@@ -1262,6 +1283,10 @@ form input[type=submit] {
 	display: none;
 }
 
+.register-overview {
+	box-shadow: 0 0 0 transparent;
+}
+
 .register-overview h2 {
 	width: 100%;
 	display: block;
@@ -1276,12 +1301,14 @@ form input[type=submit] {
 	background: white;
 }
 
-.register-overview ul li {
+.register-overview ul li,
+.challenges-overview ul li {
 	list-style-type: none;
 	display: block;
 }
 
-.register-overview ul li a {
+.register-overview ul li a,
+.challenges-overview ul li a {
 	width: 100%;
 	display: block;
 	float: left;
@@ -1317,8 +1344,13 @@ form input[type=submit] {
 }
 
 @media screen and (max-width: 800px) {
-	form .dropdown h2 {
+	form .dropdown h2,
+	.faq ul h2,
+	.faq ul li h3 {
 		font-size: 1em;
+	}
+	.faq ul.general li .answer * {
+		font-size: .9em;
 	}
 }
 

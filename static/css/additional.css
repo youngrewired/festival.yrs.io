@@ -28,7 +28,8 @@ html {
   padding-top: 4em;
   border-bottom: 6px solid #E34F50;
   padding-bottom: 2em;
-  padding-left: 0; }
+  padding-left: 0;
+  overflow: hidden; }
   #header #nav:last-child {
     margin-right: 0; }
 
@@ -216,10 +217,11 @@ html {
   .services .start.header-only h1 {
     margin-bottom: 0; }
   .services .start.white {
-    padding-top: 1em;
+    padding-top: 2.5em;
     padding-bottom: 2.5em; }
 .services .section {
   padding: 5em 0;
+  background: white;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -237,7 +239,8 @@ html {
     .services .section .copy h2, .services .section .update-post a.cta h2, .update-post .services .section a.cta h2 {
       font-weight: 300;
       margin-bottom: 1em;
-      font-size: 1.5em; }
+      font-size: 1.75em;
+      line-height: 1.5; }
     .services .section .copy.full-text, .services .section .update-post a.full-text.cta, .update-post .services .section a.full-text.cta {
       float: left;
       display: block;
@@ -251,6 +254,18 @@ html {
       .services .section .copy.full-text h2, .services .section .update-post a.full-text.cta h2, .update-post .services .section a.full-text.cta h2 {
         padding-bottom: 1em;
         border-bottom: 2px solid white; }
+      .services .section .copy.full-text a.cta.white, .services .section .update-post a.full-text.cta a.cta.white, .update-post .services .section a.full-text.cta a.cta.white {
+        color: #E34F50;
+        background: white;
+        margin-top: 2em;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
+        .services .section .copy.full-text a.cta.white:hover, .services .section .update-post a.full-text.cta a.cta.white:hover, .update-post .services .section a.full-text.cta a.cta.white:hover {
+          background: #f2f2f2;
+          -webkit-transition: all 0.15s ease-out 0s;
+          -moz-transition: all 0.15s ease-out 0s;
+          transition: all 0.15s ease-out 0s; }
     .services .section .copy.one-line, .services .section .update-post a.one-line.cta, .update-post .services .section a.one-line.cta {
       margin-top: 1.25em; }
   .services .section .links {
@@ -290,6 +305,10 @@ html {
     margin-left: 12.79471%; }
   .services .section.right img {
     margin-left: 12.79471%; }
+  .services .section.top-only {
+    padding-bottom: 0; }
+  .services .section.bottom-only {
+    padding-top: 0; }
   .services .section.blue {
     background: #7EC7E3;
     padding: 5em 0; }
@@ -348,6 +367,45 @@ html {
       color: white; }
     .services .section.background.register p {
       margin-bottom: 1.5em; }
+@media screen and (max-width: 900px) {
+  .services .section img {
+    display: none; }
+  .services .section .copy, .services .section .update-post a.cta, .update-post .services .section a.cta {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%;
+    margin-left: 0;
+    padding: 0 5em; }
+    .services .section .copy:last-child, .services .section .update-post a.cta:last-child, .update-post .services .section a.cta:last-child {
+      margin-right: 0; }
+    .services .section .copy *, .services .section .update-post a.cta *, .update-post .services .section a.cta * {
+      text-align: center; }
+  .services .section img + .copy, .services .section .update-post img + a.cta, .update-post .services .section img + a.cta {
+    margin-left: 0; }
+  .services .section.background .copy.full-text, .services .section.background .update-post a.full-text.cta, .update-post .services .section.background a.full-text.cta {
+    width: 100%;
+    margin-left: 0; } }
+@media screen and (max-width: 600px) {
+  .services .section {
+    padding: 2.5em 0; }
+  .services .start h1 {
+    font-size: 1.5em; }
+  .services .start h2 {
+    font-size: 1em; }
+  .services .start h3 {
+    font-size: 1em; }
+  .services .section .copy, .services .section .update-post a.cta, .update-post .services .section a.cta {
+    padding: 0 1em !important; }
+    .services .section .copy h2, .services .section .update-post a.cta h2, .update-post .services .section a.cta h2 {
+      font-size: 1.25em; }
+  .services .section.background {
+    padding: 5em 0; }
+  .services .section .copy.full-text, .services .section .update-post a.full-text.cta, .update-post .services .section a.full-text.cta {
+    font-size: 1em; }
+  .services .section.background.register {
+    padding: 2.5em 0 5em 0; } }
 
 #footer-wrapper footer#footer .container {
   max-width: 68em;
@@ -427,6 +485,16 @@ html {
       .updates ul li h2 small {
         display: block;
         margin-left: 0; } }
+form .ss-form-entry {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  display: block;
+  overflow: auto;
+  margin-bottom: 2em; }
+  form .ss-form-entry:last-child {
+    margin-right: 0; }
 form .required-message,
 form .error-message {
   display: none; }
@@ -441,30 +509,58 @@ form .ss-form-question {
   form .ss-form-question:last-child {
     margin-right: 0; }
 form .ss-q-title {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
   margin-bottom: -1em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .8em;
+  color: #444; }
+  form .ss-q-title:last-child {
+    margin-right: 0; }
 form label[for="itemView.getDomIdToLabel()"] {
   display: inline; }
 form form input[type="text"]:focus, form form input[type="email"]:focus, form form input[type="password"]:focus, form form select:focus, form form textarea:focus {
   outline: 0 !important;
   border-color: #E34F50 !important; }
+form .note {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  float: left;
+  width: 100%; }
+  form .note:last-child {
+    margin-right: 0; }
 form .note p {
   margin-bottom: 0;
-  font-size: .7em;
+  font-size: .8em;
   background: #eee;
   border-radius: 6px;
   padding: 1em 1.5em;
   color: #444;
-  margin-top: 1em; }
+  margin-top: 1em;
+  float: left;
+  width: 100%; }
   form .note p:before {
     content: "\f059";
     font-family: "FontAwesome";
     margin-right: 1em; }
+form ul.ss-choices {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  form ul.ss-choices:last-child {
+    margin-right: 0; }
 form li.ss-choice-item {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 48.82117%;
+  margin-top: .5em; }
   form li.ss-choice-item:last-child {
     margin-right: 0; }
   form li.ss-choice-item:nth-child(2n) {
@@ -485,6 +581,17 @@ form li.ss-choice-item {
     width: 100%; }
     form li.ss-choice-item:last-child:last-child {
       margin-right: 0; }
+  @media screen and (max-width: 900px) {
+    form li.ss-choice-item {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      form li.ss-choice-item:last-child {
+        margin-right: 0; } }
+
+form.centre .ss-q-title {
+  font-size: 1em; }
 
 .copy ul li:before, .update-post a.cta ul li:before {
   content: ""; }
@@ -645,6 +752,23 @@ form li.ss-choice-item {
     text-transform: uppercase; }
   .festival-journey .start h1 {
     margin: 0; }
+
+.press h2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 19px;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  background: #AD196F;
+  color: white;
+  border-radius: 6px;
+  padding: .25em; }
+  .press h2:last-child {
+    margin-right: 0; }
 
 body:before {
   content: ""; }
@@ -986,6 +1110,25 @@ h1.title {
   margin-top: 1em !important; }
   .centre-page .register:last-child {
     margin-right: 0; }
+
+form.validate label {
+  margin: 0;
+  font-size: .9em;
+  text-transform: uppercase; }
+  form.validate label .asterisk {
+    display: none; }
+form.validate input {
+  margin-bottom: 2em; }
+form.validate ul li:before {
+  display: none; }
+form.validate input[type="radio"] {
+  display: inline;
+  margin-bottom: 0; }
+  form.validate input[type="radio"] + label {
+    display: inline;
+    margin-left: 0.5em; }
+form.validate p.mc-field-group.input-group {
+  margin-bottom: 0; }
 
 @media screen and (max-width: 1200px) {
   .container,

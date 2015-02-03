@@ -1,0 +1,13 @@
+{% extends "templates/partials/base.html" %}
+{% block content %}
+<div class="full-width-page conduct bulleted" id="main-wrapper">
+    <h1 class="title">Code of Conduct</h1>
+    <div class="wrapper">
+        <div class="copy">
+        	<div class="inner">
+        		{{cms.agreements.code_of_conduct|safe}}
+        	</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
