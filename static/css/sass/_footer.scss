@@ -5,16 +5,20 @@
 			.logo img {
 				@include span-columns(2);
 				@include shift(5);
-				margin-top: 50px;
-				margin-bottom: 45px;
+				margin-top: 25px;
+				margin-bottom: 25px;
 			}
 			.links {
 				@include span-columns(12);
 				text-align: center;
 				a {
-					color: white;
+					color: $red;
 					margin: 0 .5em;
 				}
+			}
+			.copyright {
+				@extend .links;
+				margin-bottom: 25px;
 			}
 		}
 	}

@@ -16,6 +16,7 @@ form {
 		margin-bottom: 2em;
 		@include span-columns(12);
 	}
+
 	.ss-q-title {
 		@include span-columns(12);
 		margin-bottom: -1em;
@@ -66,6 +67,7 @@ form {
 			font-weight: 300;
 			.ss-choice-label {
 				margin-left: .5em;
+				font-size: .8em;
 			}
 		}
 		&:before {
@@ -85,10 +87,6 @@ form {
 	.dropdown label {
 		font-size: .8em;
 	}
-}
-
-form.centre .ss-q-title {
-	font-size: 1em;
 }
 
 .copy ul li:before {

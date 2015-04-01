@@ -268,15 +268,15 @@ html {
           transition: all 0.15s ease-out 0s; }
     .services .section .copy.one-line, .services .section .update-post a.one-line.cta, .update-post .services .section a.one-line.cta {
       margin-top: 1.25em; }
-  .services .section .links {
+  .services .section .links, .services .section #footer-wrapper footer#footer .container .copyright, #footer-wrapper footer#footer .container .services .section .copyright {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-top: 1em; }
-    .services .section .links:last-child {
+    .services .section .links:last-child, .services .section #footer-wrapper footer#footer .container .copyright:last-child, #footer-wrapper footer#footer .container .services .section .copyright:last-child {
       margin-right: 0; }
-    .services .section .links a {
+    .services .section .links a, .services .section #footer-wrapper footer#footer .container .copyright a, #footer-wrapper footer#footer .container .services .section .copyright a {
       float: left;
       display: block;
       margin-right: 4.82916%;
@@ -286,11 +286,11 @@ html {
       text-decoration: none;
       margin-bottom: .5em;
       text-align: center; }
-      .services .section .links a:last-child {
+      .services .section .links a:last-child, .services .section #footer-wrapper footer#footer .container .copyright a:last-child, #footer-wrapper footer#footer .container .services .section .copyright a:last-child {
         margin-right: 0; }
-      .services .section .links a:nth-child(1n) {
+      .services .section .links a:nth-child(1n), .services .section #footer-wrapper footer#footer .container .copyright a:nth-child(1n), #footer-wrapper footer#footer .container .services .section .copyright a:nth-child(1n) {
         margin-right: 0; }
-      .services .section .links a:nth-child(1n+1) {
+      .services .section .links a:nth-child(1n+1), .services .section #footer-wrapper footer#footer .container .copyright a:nth-child(1n+1), #footer-wrapper footer#footer .container .services .section .copyright a:nth-child(1n+1) {
         clear: left; }
   .services .section img {
     float: left;
@@ -421,21 +421,23 @@ html {
     margin-right: 2.35765%;
     width: 14.70196%;
     margin-left: 42.64902%;
-    margin-top: 50px;
-    margin-bottom: 45px; }
+    margin-top: 25px;
+    margin-bottom: 25px; }
     #footer-wrapper footer#footer .container .logo img:last-child {
       margin-right: 0; }
-  #footer-wrapper footer#footer .container .links {
+  #footer-wrapper footer#footer .container .links, #footer-wrapper footer#footer .container .copyright {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
     text-align: center; }
-    #footer-wrapper footer#footer .container .links:last-child {
+    #footer-wrapper footer#footer .container .links:last-child, #footer-wrapper footer#footer .container .copyright:last-child {
       margin-right: 0; }
-    #footer-wrapper footer#footer .container .links a {
-      color: white;
+    #footer-wrapper footer#footer .container .links a, #footer-wrapper footer#footer .container .copyright a {
+      color: #E34F50;
       margin: 0 .5em; }
+  #footer-wrapper footer#footer .container .copyright {
+    margin-bottom: 25px; }
 @media screen and (max-width: 900px) {
   #footer-wrapper #pre-footer > * {
     display: block;
@@ -573,7 +575,8 @@ form li.ss-choice-item {
     margin: 0;
     font-weight: 300; }
     form li.ss-choice-item label .ss-choice-label {
-      margin-left: .5em; }
+      margin-left: .5em;
+      font-size: .8em; }
   form li.ss-choice-item:before {
     display: none; }
   form li.ss-choice-item:last-child {
@@ -602,9 +605,6 @@ form input[type="submit"] {
     margin-right: 0; }
 form .dropdown label {
   font-size: .8em; }
-
-form.centre .ss-q-title {
-  font-size: 1em; }
 
 .copy ul li:before, .update-post a.cta ul li:before {
   content: ""; }
@@ -799,6 +799,8 @@ form.centre .ss-q-title {
   padding: .25em; }
   .press h2:last-child {
     margin-right: 0; }
+.press a.cta {
+  margin-bottom: 5em; }
 
 body:before {
   content: ""; }
@@ -1161,6 +1163,9 @@ form.validate input[type="radio"] {
     margin-left: 0.5em; }
 form.validate p.mc-field-group.input-group {
   margin-bottom: 0; }
+
+.international .cta.button + .cta.button {
+  margin-top: 2em; }
 
 @media screen and (max-width: 1200px) {
   .container,

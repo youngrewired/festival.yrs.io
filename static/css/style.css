@@ -640,9 +640,13 @@
 
 	#footer
 	{
-		background: #E34F50;
-        padding-bottom: 3em;
+		background: white;
 	}
+
+		#footer .container {
+			border-bottom: 5px solid #E34F50;
+			padding-bottom: 3em;
+		}
 
         #footer * {
             line-height: 2;
