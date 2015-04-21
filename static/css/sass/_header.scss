@@ -86,20 +86,37 @@
 	}
 }
 
-#header .contact {
+#header .donate {
 	@include span-columns(2);
 	@include shift(2);
 	margin-top: 50px;
 	color: $red;
 	text-align: right;
-	font-size: 2em;
 	margin-right: .25em;
-	a {
-		color: $red;
-		text-decoration: none;
+	form {
+		input[type="submit"] {
+			margin-top: 0;
+			border-radius: 0;
+			font-size: 1.2em;
+			font-weight: normal;
+			border-radius: 6px;
+			&:hover {
+				background: $red--dark;
+			}
+		}
 	}
-	&:hover {
-		cursor: pointer;
+	@media screen and (max-width: 1200px) {
+		@include span-columns(12);
+		@include shift(0);
+		margin-top: 0;
+		form input[type="submit"] {
+			margin-bottom: 2rem;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		form input[type="submit"] {
+			font-size: 4vw;
+		}
 	}
 }
 

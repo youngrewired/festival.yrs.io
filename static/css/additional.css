@@ -111,7 +111,7 @@ html {
   #header .menu:hover {
     cursor: pointer; }
 
-#header .contact {
+#header .donate {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -120,15 +120,32 @@ html {
   margin-top: 50px;
   color: #E34F50;
   text-align: right;
-  font-size: 2em;
   margin-right: .25em; }
-  #header .contact:last-child {
+  #header .donate:last-child {
     margin-right: 0; }
-  #header .contact a {
-    color: #E34F50;
-    text-decoration: none; }
-  #header .contact:hover {
-    cursor: pointer; }
+  #header .donate form input[type="submit"] {
+    margin-top: 0;
+    border-radius: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+    border-radius: 6px; }
+    #header .donate form input[type="submit"]:hover {
+      background: #BD4142; }
+  @media screen and (max-width: 1200px) {
+    #header .donate {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%;
+      margin-top: 0; }
+      #header .donate:last-child {
+        margin-right: 0; }
+      #header .donate form input[type="submit"] {
+        margin-bottom: 2rem; } }
+  @media screen and (max-width: 600px) {
+    #header .donate form input[type="submit"] {
+      font-size: 4vw; } }
 
 #header #logo {
   float: left;
@@ -966,6 +983,9 @@ h1.title {
   .centres .centre:nth-child(3n+1) {
     clear: left; }
 
+.centres .map {
+  margin-bottom: 3em; }
+
 .supporters h2 {
   float: left;
   display: block;
@@ -1202,6 +1222,9 @@ form.validate p.mc-field-group.input-group {
     margin-left: 4.2649%; }
     .faq .content:last-child {
       margin-right: 0; }
+
+  .centres .map {
+    display: none; }
 
   .centres .centre {
     float: left;
