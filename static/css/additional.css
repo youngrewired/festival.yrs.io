@@ -127,7 +127,7 @@ html {
     margin-top: 0;
     border-radius: 0;
     font-size: 1.2em;
-    font-weight: normal;
+    font-weight: 600;
     border-radius: 6px; }
     #header .donate form input[type="submit"]:hover {
       background: #BD4142; }
@@ -833,8 +833,8 @@ form .dropdown label {
       .festival-journey .index-block ul li a.button {
         background: transparent;
         border: 1px solid white;
-        font-size: .8em;
-        font-weight: normal; }
+        font-size: 1em;
+        font-weight: 600; }
         .festival-journey .index-block ul li a.button:hover {
           background: white;
           color: #E34F50; }
@@ -857,9 +857,11 @@ form .dropdown label {
     .festival-journey .index-block .right a.youtube {
       background: transparent;
       border: 1px solid white;
-      font-size: .8em;
-      font-weight: normal;
-      margin-top: 2rem; }
+      font-size: 1em;
+      font-weight: 600;
+      margin-top: 2rem;
+      width: 100%;
+      text-align: center; }
       .festival-journey .index-block .right a.youtube:hover {
         background: white;
         color: #E34F50; }

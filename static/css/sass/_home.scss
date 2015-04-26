@@ -6,8 +6,8 @@
 		@mixin home-block-button {
 			background: transparent;
 			border: 1px solid white;
-			font-size: .8em;
-			font-weight: normal;
+			font-size: 1em;
+			font-weight: 600;
 			&:hover {
 				background: white;
 				color: $red;
@@ -85,6 +85,8 @@
 			a.youtube {
 				@include home-block-button;
 				margin-top: 2rem;
+				width: 100%;
+				text-align: center;
 				i {
 					margin-right: .5em;
 				}
