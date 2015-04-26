@@ -48,3 +48,8 @@ $(function() {
 
 var unslider = $('.banner').unslider();
 
+$(".index-block .donate").click(function(e) {
+    e.preventDefault();
+    $("header .donate form input[type='submit']").click();
+});
+

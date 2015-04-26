@@ -773,6 +773,132 @@ form .dropdown label {
     .contact .right:last-child {
       margin-right: 0; } }
 
+.festival-journey .index-block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-image: url(/static/images/code-tile.png);
+  background-color: #E34F50;
+  display: block;
+  padding: 3rem; }
+  .festival-journey .index-block:last-child {
+    margin-right: 0; }
+  .festival-journey .index-block .left {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .festival-journey .index-block .left:last-child {
+      margin-right: 0; }
+  .festival-journey .index-block h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    font-size: 1.2em; }
+  .festival-journey .index-block h2 {
+    color: white;
+    font-size: 1em;
+    margin: 0;
+    text-transform: uppercase; }
+  .festival-journey .index-block .blurb p {
+    color: white;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem; }
+    .festival-journey .index-block .blurb p a {
+      text-decoration: underline;
+      color: white; }
+  .festival-journey .index-block ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    -moz-padding-start: 0;
+    -webkit-padding-start: 0; }
+    .festival-journey .index-block ul:last-child {
+      margin-right: 0; }
+    .festival-journey .index-block ul h3 {
+      display: inline;
+      margin-right: 2em;
+      font-size: 1em;
+      color: white;
+      text-transform: uppercase; }
+    .festival-journey .index-block ul li {
+      display: inline;
+      margin-right: 2em; }
+      .festival-journey .index-block ul li a.button {
+        background: transparent;
+        border: 1px solid white;
+        font-size: .8em;
+        font-weight: normal; }
+        .festival-journey .index-block ul li a.button:hover {
+          background: white;
+          color: #E34F50; }
+        .festival-journey .index-block ul li a.button.main {
+          background: white;
+          color: #E34F50; }
+          .festival-journey .index-block ul li a.button.main:hover {
+            background: #e6e6e6; }
+  .festival-journey .index-block .right {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-right: 0; }
+    .festival-journey .index-block .right:last-child {
+      margin-right: 0; }
+    .festival-journey .index-block .right iframe {
+      width: 100%;
+      height: 195px; }
+    .festival-journey .index-block .right a.youtube {
+      background: transparent;
+      border: 1px solid white;
+      font-size: .8em;
+      font-weight: normal;
+      margin-top: 2rem; }
+      .festival-journey .index-block .right a.youtube:hover {
+        background: white;
+        color: #E34F50; }
+      .festival-journey .index-block .right a.youtube.main {
+        background: white;
+        color: #E34F50; }
+        .festival-journey .index-block .right a.youtube.main:hover {
+          background: #e6e6e6; }
+      .festival-journey .index-block .right a.youtube i {
+        margin-right: .5em; }
+  @media screen and (max-width: 1200px) {
+    .festival-journey .index-block .left {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .festival-journey .index-block .left:last-child {
+        margin-right: 0; }
+    .festival-journey .index-block .right {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-top: 3rem; }
+      .festival-journey .index-block .right:last-child {
+        margin-right: 0; }
+      .festival-journey .index-block .right iframe {
+        height: 50vw; }
+      .festival-journey .index-block .right .youtube {
+        display: none; } }
+  @media screen and (max-width: 800px) {
+    .festival-journey .index-block {
+      padding: 2rem 1rem; }
+      .festival-journey .index-block .left .blurb p {
+        margin-bottom: 0; }
+      .festival-journey .index-block ul li a.button {
+        margin-top: 2rem; }
+      .festival-journey .index-block .right {
+        display: none; } }
 .festival-journey .services .start.white {
   padding: 0 !important;
   margin: 0 !important; }
