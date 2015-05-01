@@ -16,9 +16,13 @@
 
 #header #nav ul {
 	@include span-columns(3 of 12);
-	@include omega(4n);
+	@include omega(5n);
 	margin-bottom: 0;
 	padding: 0 20px 30px 20px;
+}
+
+#header #nav form input {
+	margin-bottom: 3rem;
 }
 
 #header #nav ul h1 { 

@@ -42,10 +42,13 @@ html {
   padding: 0 20px 30px 20px; }
   #header #nav ul:last-child {
     margin-right: 0; }
-  #header #nav ul:nth-child(4n) {
+  #header #nav ul:nth-child(5n) {
     margin-right: 0; }
-  #header #nav ul:nth-child(4n+1) {
+  #header #nav ul:nth-child(5n+1) {
     clear: left; }
+
+#header #nav form input {
+  margin-bottom: 3rem; }
 
 #header #nav ul h1 {
   font-size: 1.25em;

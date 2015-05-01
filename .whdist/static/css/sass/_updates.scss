@@ -1,0 +1,25 @@
+.updates ul li:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+	.updates {
+		margin-top: 25px;
+	}
+	.updates ul li {
+		@include span-columns(12);
+		@include shift(0);	
+		width: 100% !important;
+		margin-left: 0 !important;
+		.article-image {
+			height: 25vw;
+		}
+		h2 {
+			text-align: center;
+			small {
+				display: block;
+				margin-left: 0;
+			}
+		}
+	}
+}

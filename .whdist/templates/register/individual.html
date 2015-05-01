@@ -1,0 +1,15 @@
+{% extends "templates/partials/base.html" %}
+{% block title %}{% parent %} - {{ item.name }}{% endblock %}
+{% block content %}
+   <h1 class="title no-eyes">{{item.name}}</h1>
+    <div class="wrapper register">     
+        <div class="copy">
+          <div class="inner">
+            <div class="note">
+              {{item.top_text|safe}}
+            </div>
+            {{item.form|safe}}
+          </div>
+        </div>
+    </div>
+{% endblock %}

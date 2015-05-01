@@ -1,0 +1,219 @@
+.services {
+    $section-spacing: 5em;
+    .start {
+        padding: $section-spacing 0;
+        background: white;
+        color: $red;
+        text-align: center;
+        h1 {
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 2em;
+            margin-top: 0;
+        }
+        h2 {
+            margin: 1em 0;
+            a {
+                color: $red;
+            }
+        }
+        p {
+            @include span-columns(10);
+            @include shift(1);
+            line-height: 2em;
+        }
+        &.header-only h1 {
+            margin-bottom: 0;
+        }
+        &.white {
+            padding-top: 2.5em;
+            padding-bottom: ($section-spacing / 2);
+        }
+    }
+    .section {
+        padding: $section-spacing 0;
+        background: white;
+        @include span-columns(12);
+        .copy {
+            @include span-columns(6);
+            line-height: 2em;
+            h2 {
+                font-weight: 300;
+                margin-bottom: 1em;
+                font-size: 1.75em;
+                line-height: 1.5; 
+            }
+            &.full-text {
+                @include span-columns(8);
+                @include shift(2);
+                text-align: center;
+                font-size: 1.25em;
+                h2 {
+                    padding-bottom: 1em;
+                    border-bottom: 2px solid white;
+                }
+                a.cta.white {
+                    color: $red;
+                    background: white;
+                    margin-top: 2em;
+                    @include transition;
+                    &:hover {
+                        background: darken(white, 5%);
+                        @include transition;
+                    }
+                }
+            }
+            &.one-line {
+                margin-top: 1.25em;
+            }
+        }
+        .links {
+            @include span-columns(6);
+            margin-top: 1em;
+            a {
+                @include span-columns(3 of 6);
+                @include shift(2);
+                @include omega(1n);
+                padding: .75em 1em;
+                text-decoration: none;
+                margin-bottom: .5em;
+                text-align: center;
+            }
+        }
+        img {
+            @include span-columns(4);
+        }
+        img + .copy {
+            @include shift(1);
+        }
+        .copy + img {
+            @include shift(1.5);
+        }
+        &.right img {
+            @include shift(1.5);
+        }
+        &.top-only {
+            padding-bottom: 0;
+        }
+        &.bottom-only {
+            padding-top: 0
+        }
+        &.blue {
+            background: $blue;
+            padding: $section-spacing 0;
+            * {
+                color: white;
+            }
+        }
+        &.pink {
+            background: $pink;
+            padding: $section-spacing 0;
+            * {
+                color: white;
+            }
+        }
+        iframe {
+            @include span-columns(5);
+            @include shift(1);
+            height: 200px;
+        }
+        &.get-in-touch {
+            padding: $section-spacing 0;
+            a {
+                @include outer-container;
+                text-align: center;
+                color: white;
+                display: block;
+                font-size: 1.25em;
+                text-decoration: none;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .section.background {
+        background-size: cover;
+        padding: ($section-spacing * 2) 0;
+        * {
+            color: white;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        &.week {
+            background-image: url(/static/images/festival--journey/week.jpg);
+        }
+        &.weekend {
+            background-image: url(/static/images/festival--journey/weekend.jpg);
+        }
+        &.register {
+            padding: $section-spacing 0;
+            background-color: white;
+            * {
+                color: #444;
+            }
+            h2 {
+                border-color: #444;
+            }
+            a {
+                color: white;
+            }
+            p {
+                margin-bottom: 1.5em;
+            }
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .section img {
+            display: none
+        }
+        .section .copy {
+            @include span-columns(12);
+            @include shift(0);
+            margin-left: 0;
+            padding: 0 5em;
+            * {
+                text-align: center
+            }
+        }
+        .section img + .copy {
+            margin-left: 0
+        }
+        .section.background .copy.full-text {
+            width: 100%;
+            margin-left: 0
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .section {
+            padding: 2.5em 0;
+        }
+        .start {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1em;
+            }
+            h3 {
+                font-size: 1em;
+            }
+        }
+        .section .copy {
+            padding: 0 1em !important; 
+            h2 {
+                font-size: 1.25em;
+            }
+        }
+        .section.background {
+            padding: 5em 0;
+        }
+        .section .copy.full-text {
+            font-size: 1em;
+        }
+        .section.background.register {
+            padding: 2.5em 0 5em 0;
+        }
+    }
+}

@@ -1,0 +1,423 @@
+$red: #E34F50;
+$red--dark: #BD4142;
+$blue: #7EC7E3;
+$pink: #AD196F;
+$yellow: #F1C71C;
+$green: #3D9970;
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "header";
+@import "service";
+@import "footer";
+@import "updates";
+@import "register";
+@import "prepare";
+@import "schedule";
+@import "contact";
+@import "home";
+@import "press";
+@import "search";
+
+::selection {
+	background: $red;
+	color: white;
+}
+
+::-moz-selection {
+	@extend ::selection;
+}
+
+body:before {
+	content: "";
+}
+
+.wrapper,
+.container {
+	@include outer-container;
+}
+
+h1.title {
+	background: $red;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 2em;
+	padding: 1em;
+	margin-bottom: 1.5em;
+	text-align: center;
+	color: white;
+	&.pink {
+		background: $pink;
+	}
+	&.yellow {
+		background: $yellow;
+	}
+	&.blue {
+		background: $blue;
+	}
+	&:before {
+		display: inline-block;
+		width: 56px;
+		height: 24px;
+		margin-right: 12.5px;
+		content: "";
+		background: url("/static/images/ruby-eyes.gif") no-repeat 0 0;
+		background-size: 100%;
+	}
+	&.no-eyes:before {
+		display: none !important;
+	}
+	@media screen and (max-width: 800px) {
+		font-size: 1.25em;
+		margin-bottom: 25px;
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.festival-journey + #footer-wrapper #pre-footer {
+	display: none;
+}
+
+.update-post {
+	h1.title {
+		&.Participant,
+		&.Staff {
+			background: $red;
+		}
+		&.Mentor {
+			background: $pink;
+		}
+		&.Centre.Lead {
+			background: $blue;
+		}
+		&.Volunteer {
+			background: $yellow;
+		}
+		&.Sponsor {
+			background: $green;
+		}
+		&.Parents {
+			background: $red--dark;
+		}
+	}
+	.copy {
+		@include span-columns(8);
+		@include shift(2);
+		figure {
+			margin: 0;
+			img {
+				border-radius: 6px;
+			}
+			figcaption {
+				font-size: .8em;
+				text-transform: uppercase;
+				text-align: right;
+				margin-top: -.5em;
+				margin-bottom: 1.5em;
+			}
+		}
+	}
+	a.cta {
+		@extend .copy;
+		text-align: center;
+	}
+}
+
+.faq {
+	.content {
+		@include span-columns(8);
+		@include shift(2);
+	}
+	ul.general {
+		margin-top: 1.5em;
+	}
+}
+
+.centre-page .content {
+	@include span-columns(8);
+	@include shift(2);
+	img {
+		margin-top: 1.5em;
+	}
+}
+
+.inner,
+.updates ul li {
+	@include span-columns(8);
+	@include shift(2);
+	@media screen and (max-width: 800px) {
+		@include span-columns(11);
+		@include shift(.5);	
+	}
+}
+
+.inner .img-3 img {
+	@include span-columns(4);
+	@include omega(3n);
+	border-radius: 6px;
+	margin-bottom: 35px;
+}
+
+.inner a.cta.button {
+	@include span-columns(12);
+	text-align: center;
+}
+
+.update-post h1.title:before {
+	display: none;
+}
+
+.centres .centre {
+	@include span-columns(4);
+	@include omega(3n);
+}
+
+.centres .map {
+	margin-bottom: 3em;
+}
+
+.supporters {
+	h2 {
+		@include span-columns(12);
+		margin-bottom: 19px;
+		margin-top: 1em;
+		text-transform: uppercase;
+		font-weight: 800;
+		text-align: center;
+		background: $pink;
+		color: white;
+		border-radius: 6px;
+		padding: .25em;
+	}
+	.sponsors-2015 {
+		li img {
+			width: 100%;
+		}
+		li:before {
+			display: none;
+		}
+	}
+	.body li {
+		@include span-columns(4);
+		@include omega(3n);
+		background: $blue;
+		text-align: center;
+		border-radius: 6px;
+		margin-bottom: 1.5vw;
+		padding: .5em;
+		color: white;
+		&:before {
+			content: "" !important;
+			margin-right: 0 !important;
+		}
+		@media screen and (max-width: 800px) {
+			@include span-columns(12);
+			@include omega(1n);
+		}
+	}
+	.past-sponsors {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.international .copy ul li,
+.faq-answer .inner ul li,
+.press .inner ul li,
+.bulleted ul li  {
+	margin-bottom: 2em;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&:before {
+		content: "\f105";
+	}
+}
+
+.inner img.header {
+	width: 100%;
+	border-radius: 6px;
+	margin-bottom: 1.5em;
+}
+
+.press h2 {
+	margin-bottom: 1em;
+}
+
+.section.role-selector {
+	@include outer-container;
+	background: #f3f3f3;
+	border-radius: 6px;
+	padding: 1em;
+	margin-bottom: 2em;
+	h1 {
+		@include span-columns(12);
+		text-align: center;
+		font-size: 1.5em;
+		margin-bottom: 1.25em;
+	}
+	a {
+		@include span-columns(4);
+		@include omega(3n + 1);
+		img {
+			width: 100%;
+		}
+		p {
+			text-align: center;
+			color: #444;
+			font-weight: 600;
+			margin-top: 1em;
+			margin-bottom: .75em;
+		}
+	}
+}
+
+.faq ul h2:after,
+.faq ul h2.active:after {
+	@include transition;
+}
+
+.venue {
+	.meta {
+		@include span-columns(6);
+		address {
+			font-style: normal;
+			margin-bottom: 2em;
+		}
+	}
+	iframe {
+		@include span-columns(6);
+		margin: 0 !important;
+	}
+}
+
+.centre-page .top-blocks .column {
+	@include span-columns(4 of 12);
+	@include omega(3n);
+	h2 {
+		font-size: 1em;
+	}
+}
+
+.centre-page .description {
+	@include span-columns(12);
+}
+
+.centre-page .register {
+	@include span-columns(12);
+	margin-top: 1em !important;
+}
+
+form.validate {
+	label {
+		margin: 0;
+		font-size: .8em;
+		text-transform: uppercase;
+		.asterisk {
+			display: none
+		}
+	}
+	input {
+		margin-bottom: 2em
+	}
+	ul {
+		padding-left: 0
+	}
+	ul li:before {
+		display: none
+	}
+	input[type="radio"] {
+		display: inline;
+		margin-bottom: 0;
+		+ label {
+			display: inline;
+			margin-left: .5em
+		}
+	}
+	p.mc-field-group.input-group {
+		margin-bottom: 0;
+	}
+} 
+
+.international .cta.button + .cta.button {
+	margin-top: 2em;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	.container,
+	.wrapper {
+		padding: 0 1em;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.venue {
+		.meta,
+		iframe {
+			@include span-columns(12);
+			@include shift(0);
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.update-post {
+		h2.author {
+			font-size: 1em;
+		}
+		.copy {
+			@include span-columns(11);
+			@include shift(.5);
+		}
+	}
+	.faq .content {
+		@include span-columns(11);
+		@include shift(.5);
+	}
+	.centres .map {
+		display: none;
+	}
+	.centres .centre {
+		@include span-columns(11);
+		@include shift(.5);
+	}
+	.centres .new-centre {
+		@include span-columns(11);
+		@include shift(.5);
+		margin-top: 0;
+		margin-bottom: 2em;
+		p, 
+		a {
+			display: block;
+			margin: 0;
+			@include span-columns(12);
+			@include shift(0);
+		}
+		p {
+			margin-bottom: 1em;
+		}
+	}
+	.centre-page .top-blocks .column {
+		@include span-columns(12 of 12);
+		@include omega(1n);
+	}
+	.centre-page .register p span {
+		font-size: 1.25em;
+		font-weight: 300;
+		margin-bottom: 40px;
+		@include span-columns(12);
+	}
+	.centre-page .register a {
+		margin: 0;
+	}
+}

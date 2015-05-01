@@ -1,0 +1,95 @@
+{% extends "templates/partials/base.html" %}
+
+{% block body_class %}homepage{% endblock %}
+
+{% block content %}
+
+  <div class="homepage">
+
+    <div class="services festival-journey no-eyes">
+      <div class="index-block">
+        <div class="container">
+          <h1>The world's largest hackathon for young people returns July 27 - August 2 2015.</h1>
+          <h2><a href="/centres">Centres</a> around the world. Free of charge. Participants 18 &amp; Under.</h2>
+          <div class="left">
+            <div class="blurb">
+              <p>
+                Spend the week building something awesome in one of our <a href="/centres">{{ cms.centres|size }} regional centres</a> around the UK and abroad, with the support of expert mentors. Then show off  your project to over 1,200 other young coders a the weekend showcase in <a href="/venue">Birmingham</a>.
+              </p>
+            </div>
+            <ul>
+              <li>
+                <a class="button main" href="/register">Register (it's free)</a>
+              </li>
+              <li>
+                <a class="button" href="mailto:ruth@rewiredstate.org?subject=I'm interested in sponsoring the Festival of Code 2015">Sponsor</a>
+              </li>
+               <li>  
+                <a class="button" href="/static/downloads/poster-pack.pdf">Share the Posters</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <iframe src="https://www.youtube.com/embed/oRzYSFKNqOs" frameborder="0" allowfullscreen></iframe>
+            <a class="youtube button" target="_blank" href="http://youtube.com/youngrewired"><i class="fa fa-youtube"></i> View more videos</a>
+          </div>
+        </div>
+      </div>
+      <div class="section right top-only">
+          <div class="wrapper">
+              <div class="copy">
+                  <h2>Spend the week meeting friends and building cool projects at your local centre.</h2>
+                  <p>
+                    Team up and invent a unique idea to create a website, app, game, algorithm or hardware hack using open data. 
+                  </p>
+              </div>
+              <img src="/static/images/festival--journey/ruby-week.png">
+          </div>
+      </div>
+      <div class="section">
+          <div class="wrapper">
+              <img src="/static/images/festival--journey/ruby-global.jpg">
+              <div class="copy">
+                  <h2>Take your place in our amazing global community of awesome digital makers.</h2>
+                  <p>
+                    Join thousands of digital makers across the world who love sharing knowledge and developing skills together. 
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="section right top-only">
+          <div class="wrapper">
+              <div class="copy">
+                  <h2>Show off your project and get feedback on how to take it further at the Festival weekend.</h2>
+                  <p>
+                    Take centre stage in Birmingham to present your project to expert judges, mentors, press and fellow YRSers. 
+                  </p>
+              </div>
+              <img src="/static/images/festival--journey/ruby-judge.png">
+          </div>
+      </div>
+      <div class="section">
+          <div class="wrapper">
+              <img src="/static/images/festival--journey/ruby-maker.png">
+              <div class="copy">
+                  <h2>Continue building at the weekend with our brand new challenges and YRS Makerspace.</h2>
+                  <p>
+                    New for 2015, we’re inviting the best and brightest in the digital and creative industries to come and play in our fully interactive Makerspace. 
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="section background register">
+          <div class="wrapper">
+              <div class="copy full-text">
+                  <h2>July 27 - August 2 2015</h2>
+                  <p>
+                      Don't miss out, register now!
+                  </p>
+                  <a href="/register" class="cta button">Register now</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+{% endblock %}

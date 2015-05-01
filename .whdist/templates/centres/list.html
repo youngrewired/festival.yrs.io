@@ -1,0 +1,38 @@
+{% extends "templates/partials/base.html" %}
+{% block content %}
+
+  {% set data = cms.centres %}
+
+  {% set data = data|sort('name') %}
+
+  <div class="full-width-page centres" id="main-wrapper">
+      <h1 class="title">Registered Centres</h1>
+      <div class="container">
+          <div class="row">
+              <div class="12u">
+                <div class="map">
+                  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=zLe_4ZZdFZAU.km6suY-BgFE0" width="100%" height="500px"></iframe>
+                </div>
+                  <div class="new-centre">
+                      <p>Want to be a part and run your own centre? <a href="/register/centre" class="button">Register interest now</a></p>
+                  </div>
+                  <ul class="row">
+                      {% for object in data %}
+                      <li class="{{object.listing_background}} centre">
+                          <a href="{{ url(object) }}">
+                              <img class="centre-image" src="{{object.image.url}}">
+                              <span class="meta">
+                                  <h3>{{ object.address.city }}</h3>
+                                  <h2>{{ object.name }}</h2>
+                                  <p>Lead - {{object.cl_name}}</p>
+                              </span>
+                          </a>
+                      </li>
+                      {% endfor %}
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+{% endblock %}

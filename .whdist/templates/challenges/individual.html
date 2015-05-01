@@ -1,0 +1,15 @@
+{% extends "templates/partials/base.html" %}
+{% block title %}{% parent %} - {{ item.name }}{% endblock %}
+{% block content %}
+<div class="full-width-page bulleted" id="main-wrapper">
+    <h1 class="title">{{item.name}}</h1>
+    <div class="wrapper">     
+        <div class="copy">
+          <div class="inner">
+          	<img class="header" src="{{item.header.url}}">
+            {{item.copy|safe}}
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

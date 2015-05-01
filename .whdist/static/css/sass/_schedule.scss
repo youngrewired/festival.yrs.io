@@ -1,0 +1,81 @@
+.schedule {
+	.day {
+	    border-radius: 6px;
+	    padding: 1.75em 2em;
+	    list-style-type: none;
+	    margin-bottom: 2em;
+	    border: 1px solid #f3f3f3;
+	    h2 {
+		    font-size: 1.75em;
+		    &:hover {
+		    	cursor: pointer;
+		    }
+		    &:after {
+				content: "\f062";
+				font-family: "FontAwesome";
+				float: right;
+				@include transition;
+			}
+			&.active:after {
+				transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				@include transition;
+			} 
+		}
+		p {
+			display: none;
+		}
+		figure[data-type="table"] {
+			margin: 0;
+		}
+		table {
+			tr {
+				border-bottom: 2.5px solid $red;
+				th {
+					display: none;
+				}
+				td {
+					padding: 1em;
+					&:first-child {
+						text-align: right;
+						margin-right: 1em;
+						font-style: italic;
+						width: 8em;
+					}
+					&:last-child {
+						font-weight: 600;
+					}
+				}
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+			@media screen and (max-width:800px) {
+				tr {
+					td {
+						display: block;
+						width: 100%;
+						text-align: center;
+						&:first-child {
+							padding-bottom: 0;
+							width: 100%;
+							text-align: center;
+						}
+						&:last-child {
+							padding-top: 0;
+						}
+					}
+				}
+			}
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	figure + p {
+		display: none;
+	}
+}

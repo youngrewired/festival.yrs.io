@@ -1,0 +1,13 @@
+{% extends "templates/partials/base.html" %}
+{% block content %}
+<div class="full-width-page international" id="main-wrapper">
+    <h1 class="title">{{cms.advice.name}}</h1>
+    <div class="wrapper">
+        <div class="copy">
+          <div class="inner">
+            {{cms.advice.copy|safe}}
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

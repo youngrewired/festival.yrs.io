@@ -1,0 +1,94 @@
+form {
+	.ss-form-entry {
+		@include span-columns(12);
+		display: block;
+		overflow: auto;
+		margin-bottom: 2em;
+	}
+	.required-message,
+	.error-message {
+		display: none;
+	}
+	.ss-required-asterisk {
+		display: inline;
+	}
+	.ss-form-question {
+		margin-bottom: 2em;
+		@include span-columns(12);
+	}
+
+	.ss-q-title {
+		@include span-columns(12);
+		margin-bottom: -1em;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: .8em;
+		color: #444
+	}
+	label[for="itemView.getDomIdToLabel()"] {
+		display: inline;
+	}
+	form input[type="text"]:focus, form input[type="email"]:focus, form input[type="password"]:focus, form select:focus, form textarea:focus {
+		outline: 0 !important;
+		border-color: $red !important; 
+	}
+	.note {
+		@include span-columns(12);
+		float: left;
+		width: 100%;
+		margin-top:1em;
+	}
+	.note p {
+		margin-bottom: 0;
+		font-size: .8em;
+		background: #eee;
+		border-radius: 6px;
+		padding: 1em 1.5em;
+		color: #444;
+		margin-top: 1em; 
+		float: left;
+		width: 100%;
+		&:before {
+			content: "\f059";
+			font-family: "FontAwesome";
+			margin-right: 1em;
+		}
+	}
+	ul.ss-choices {
+		@include span-columns(12);
+		padding-left: 0;
+	}
+	li.ss-choice-item {
+		@include span-columns(6 of 12);
+		@include omega(2n);
+		margin-top: .5em;
+		label {
+			margin: 0;
+			font-weight: 300;
+			.ss-choice-label {
+				margin-left: .5em;
+				font-size: .8em;
+			}
+		}
+		&:before {
+			display: none;
+		}
+		&:last-child {
+			@include span-columns(12);
+		}
+		@media screen and (max-width: 900px) {
+			@include span-columns(12 of 12);
+		}
+	}
+	table,
+	input[type="submit"] {
+		@include span-columns(12);
+	}
+	.dropdown label {
+		font-size: .8em;
+	}
+}
+
+.copy ul li:before {
+	content: "";
+}

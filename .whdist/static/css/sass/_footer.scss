@@ -1,0 +1,53 @@
+#footer-wrapper {
+	footer#footer {
+		.container {
+			@include outer-container;
+			.logo img {
+				@include span-columns(2);
+				@include shift(5);
+				margin-top: 25px;
+				margin-bottom: 25px;
+			}
+			.links {
+				@include span-columns(12);
+				text-align: center;
+				a {
+					color: $red;
+					margin: 0 .5em;
+				}
+			}
+			.copyright {
+				@extend .links;
+				margin-bottom: 25px;
+			}
+		}
+	}
+	@media screen and (max-width: 900px) {
+		#pre-footer {
+			> * {
+				display: block;
+				margin-left: 0;
+				width: 90%;
+				margin-left: 5%;
+			}
+			span {
+				font-size: 1.25em;
+				font-weight: 300;
+				margin-bottom: 40px;
+			}
+			a.participant {
+				margin-bottom: 1em;
+			}
+			a.centre-lead,
+			a.volunteer {
+				display: none;
+			}
+		}
+	}
+	@media screen and (max-width:600px) {
+		footer#footer .container .logo img {
+			@include span-columns(6);
+			@include shift(3);
+		}
+	}
+}
