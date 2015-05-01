@@ -24,6 +24,15 @@ $green: #3D9970;
 @import "press";
 @import "search";
 
+::selection {
+	background: $red;
+	color: white;
+}
+
+::-moz-selection {
+	@extend ::selection;
+}
+
 body:before {
 	content: "";
 }

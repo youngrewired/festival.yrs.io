@@ -1020,6 +1020,10 @@ ul.wh-search-paginate {
 @media screen and (max-width: 1100px) {
   .wh-search-results dd {
     padding: 0 1rem; } }
+::selection, ::-moz-selection {
+  background: #E34F50;
+  color: white; }
+
 body:before {
   content: ""; }
 
