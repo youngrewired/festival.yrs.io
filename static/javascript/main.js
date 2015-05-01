@@ -7,11 +7,6 @@ $(document).ready(function() {
         $("#header #nav").slideToggle("slow");
     });
 
-    $(document).click(function() {
-    	$("#header #nav").slideUp("slow");
-    });
-
-
     $(".faq ul li").hide();
 
     $(".faq ul.general li").show();
