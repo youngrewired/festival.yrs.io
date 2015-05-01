@@ -19,6 +19,9 @@
    <h1 class="title">Frequently Asked Questions</h1>
       <div class="wrapper">
           <div class="content">
+              <form action="/search-results/" class="search-form" method="get" data-search-index="false">
+				<input type="text" placeholder="Search the site..." id="tipue_search_input" name="q">
+			  </form>
                   <ul class="general">
                       <h2 class="active">General</h2>
                       {% for question in general %}

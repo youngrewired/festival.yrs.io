@@ -135,6 +135,9 @@ h1.title {
 		@include span-columns(8);
 		@include shift(2);
 	}
+	form input {
+		padding: 1em;
+	}
 	ul.general {
 		margin-top: 1.5em;
 	}
